@@ -1,13 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Nav from "./Navigation/Nav";
+import Products from "./Products/Products";
+import Sidebar from "./Sidebar/Sidebar";
+import Recommended from "./Recommended/Recommended";
 
 function App() {
   return (
-
-<h1 className='text-center'>prem</h1>
-  
-
-  
+    <>
+     <Sidebar />
+      <Nav />
+      <Recommended />
+      <Products />
+     
+    </>
   );
 }
 
