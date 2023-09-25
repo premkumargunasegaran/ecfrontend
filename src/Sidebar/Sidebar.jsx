@@ -4,7 +4,7 @@ import Catagory from "./Catagory/Category"
 import Price from "./Price/Price"
 import Colors from "./Colors/Color"
 
-function Sidebar() {
+function Sidebar({handleChange}) {
   return (
   <>
   <section className="sidebar">
@@ -12,9 +12,9 @@ function Sidebar() {
       <h1>🛒</h1>
       
     </div>
-    <Catagory />
-    <Price />
-    <Colors />
+    <Catagory handleChange={handleChange}/>
+    <Price handleChange={handleChange}/>
+    <Colors handleChange={handleChange}/>
   </section>
   
   </>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button() {
+function Button({onclickHandler,value,title}) {
   return (
-    <div>Button</div>
+   <button className='btns' onClick={onclickHandler} value={value} >{title}</button>
   )
 }
 
-export default Button
+export default Button 

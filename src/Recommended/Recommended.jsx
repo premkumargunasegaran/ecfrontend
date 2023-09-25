@@ -1,16 +1,18 @@
 import React from 'react'
 import "./recommended.css"
+import Button from '../Component/Button'
 
-function Recommended() {
-  return (
+function Recommended({handleClick}) {
+   return (
     <div >
       <h2 className='recommended-title'>Recommended</h2>
       <div className="recommended-flex">
-        <button className='btns'>All products </button>
-        <button className='btns'>Nike </button>
-        <button className='btns'>Adidas </button>
-        <button className='btns'>Puma </button>
-        <button className='btns'>Vans </button>
+        
+        <Button onclickHandler={handleClick} value={""} title={"All Products"}/>
+        <Button onclickHandler={handleClick} value={"Nike"} title={"Nike"}/>
+        <Button onclickHandler={handleClick} value={"Adidas"} title={"Adidas"}/>
+        <Button onclickHandler={handleClick} value={"Puma"} title={"Puma"}/>
+        <Button onclickHandler={handleClick} value={"Vans"} title={"Vans"}/>
       
       </div>
 
